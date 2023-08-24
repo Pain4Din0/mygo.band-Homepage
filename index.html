@@ -2,31 +2,67 @@
 <html lang="jp">
 
 <head>
+    <link rel="icon" href="https://bang-dream.bushimo.jp/mygo/assets/images/common/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://bang-dream.bushimo.jp/mygo/assets/images/common/apple-touch-icon-180x180.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <title>MyGO!!!!!</title>
     <style>
         body {
             color: white;
-            text-align: left;
-            position: absolute;
-            left: 100px;
-            top: 30px;
+            padding-left: 10%;
+            padding-top: 10%;
+        }
+        h1{
             font-family: 'Noto Serif JP', serif;
             font-weight: 200;
             font-size: 64px;
+            color: white;
+            text-align: left;
+        }
+        a{
+            font-family: 'Lato', sans-serif;
+            font-weight: 700;
+            font-size: 32px;
+            color: #3381B0;
+            text-align: left;
         }
         span{
             background: #3381B0;
         }
+        .maincontent {
+            float: left;
+            width: 60%;
+        }
+        .linkto {
+            float: left;
+            width: 40%;
+        }
+        @media screen and (max-width: 960px) {
+            .maincontent, .linkto {
+                width: 100%;
+                padding: 0;
+            }
+        }
     </style>
 </head>
 
-<body>
-    <h1><img src="https://bang-dream.bushimo.jp/mygo/assets/images/common/logo_mygo.png" alt="MyGO!!!!!（マイゴ）" width="423" height="200"></h1>
-    <p><span>迷子でもいい、<br>前へ進め。</span></p>
-</body>
+<body class="animate__animated animate__fadeIn">
+    <div class="maincontent">
+        <img src="https://bang-dream.bushimo.jp/mygo/assets/images/common/logo_mygo.png" alt="MyGO!!!!!（マイゴ）" width="423" height="200">
+        <h1><span>迷子でもいい、<br>前へ進め。</span></h1>
+    </div>
+    <div class="linkto">
+        <a href="https://twitter.com/bang_dream_gbp" target="_blank">Official Twitter</a>
+        <br>
+        <a href="https://www.youtube.com/channel/UCN-bFIdJM0gQlgX7h6LKcZA" target="_blank">Official YouTube</a>
+        <br>
+        <a href="https://anime.bang-dream.com/mygo/" target="_blank">Anime Website</a>
+    </div>
 
+</body>
+buchumen
 </html>
