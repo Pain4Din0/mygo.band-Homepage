@@ -34,6 +34,8 @@
             position: relative;
             text-decoration: none;
         }
+
+        /*link underline*/
         a::before {
             content: '';
             position: absolute;
@@ -50,6 +52,20 @@
         a:hover::before {
             transform-origin: left;
             transform: scaleX(1);
+        }
+
+        /*link icon*/
+        a[target="_blank"]:after {
+            display: inline-block;
+            content: '';
+            -webkit-mask-size: contain;
+            mask-size: contain;
+            background-color: currentColor;
+            -webkit-mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
+            mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
+            margin: -0.3em -0.2em -0.25em 0.05em;
+            width: 1.1em;
+            height: 1.1em;
         }
 
         span{
