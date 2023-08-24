@@ -28,10 +28,30 @@
         a{
             font-family: 'Lato', sans-serif;
             font-weight: 700;
-            font-size: 32px;
+            font-size: 2em;
             color: #3381B0;
             text-align: left;
+            position: relative;
+            text-decoration: none;
         }
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 3px;
+            background-color: #3381B0;
+            bottom: 0;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .35s ease-in-out;
+        }
+        a:hover::before {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+
         span{
             background: #3381B0;
         }
