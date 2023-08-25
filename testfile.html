@@ -1,88 +1,24 @@
 <!DOCTYPE html>
 <html lang="jp">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://bang-dream.bushimo.jp/mygo/assets/images/common/favicon.ico" type="image/vnd.microsoft.icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://bang-dream.bushimo.jp/mygo/assets/images/common/apple-touch-icon-180x180.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@200;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>MyGO!!!!!</title>
-    <style>
-        body {
-            color: white;
-        }
-        h1{
-            font-family: 'Noto Serif JP', serif;
-            font-weight: 200;
-            color: white;
-            text-align: left;
-        }
-        a{
-            font-family: 'Lato', sans-serif;
-            font-weight: 700;
-            color: #3381B0;
-            text-align: left;
-            position: relative;
-            text-decoration: none;
-        }
+  </head>
 
-        /*link underline*/
-        a::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 3px;
-            border-radius: 3px;
-            background-color: #3381B0;
-            bottom: 0;
-            left: 0;
-            transform-origin: right;
-            transform: scaleX(0);
-            transition: transform .35s ease-in-out;
-        }
-        a:hover::before {
-            transform-origin: left;
-            transform: scaleX(1);
-        }
-
-        /*link icon*/
-        a[target="_blank"]:after {
-            display: inline-block;
-            content: '';
-            -webkit-mask-size: contain;
-            mask-size: contain;
-            background-color: currentColor;
-            -webkit-mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
-            mask: url(https://assets.website-files.com/608fb40c3d9b077577fce197/60dd69136bc238e82174de73_external-link.svg) no-repeat 50% 50%;
-            margin: -0.3em -0.2em -0.25em 0.05em;
-            width: 1.1em;
-            height: 1.1em;
-        }
-
-        span{
-            background: #3381B0;
-        }
-
-    </style>
-</head>
-
-<body class="animate__animated animate__fadeIn">
-<div class="container-fluid mt-5">
-    <img src="https://bang-dream.bushimo.jp/mygo/assets/images/common/logo_mygo.png" alt="MyGO!!!!!（マイゴ）" width="423" height="200">
-    <h1><span>迷子でもいい、<br>前へ進め。</span></h1>
-    <a href="https://twitter.com/bang_dream_gbp" target="_blank">Official Twitter</a>
-    <br>
-    <a href="https://www.youtube.com/channel/UCN-bFIdJM0gQlgX7h6LKcZA" target="_blank">Official YouTube</a>
-    <br>
-    <a href="https://anime.bang-dream.com/mygo/" target="_blank">Anime Website</a>
-</div>
-
-</body>
-
+  <body>
+    <div class="mx-6 my-10">
+      <img class="" src="https://bang-dream.bushimo.jp/mygo/assets/images/common/logo_mygo.png" alt="MyGO!!!!!（マイゴ）" width="423" height="200" />
+      <h1 class="mb-4 mt-12">
+        <span class="bg-[#3381B0] box-decoration-clone pl-2 font-serif text-7xl font-thin leading-none text-white">迷子でもいい、<br />前へ進め。</span>
+      </h1>
+      <div class="bg-transparent pl-8 text-right font-sans text-xl font-bold text-[#3381B0]">
+        <a href="https://twitter.com/bang_dream_gbp" target="_blank">Official Twitter&nearr;</a>
+        <br />
+        <a href="https://www.youtube.com/channel/UCN-bFIdJM0gQlgX7h6LKcZA" target="_blank">Official YouTube&nearr;</a>
+        <br />
+        <a href="https://anime.bang-dream.com/mygo/" target="_blank">Anime Website&nearr;</a>
+      </div>
+    </div>
+  </body>
 </html>
