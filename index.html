@@ -39,6 +39,14 @@
         span{
             background: #3381B0;
         }
+        #fixed-image {
+            position: fixed;
+            right: 10%;
+            top: 0;
+            object-fit: contain;
+            max-height: 100vh;
+            z-index: -1;
+        }
 
         /*link underline*/
         a::before {
@@ -72,23 +80,34 @@
             width: 1.1em;
             height: 1.1em;
         }
+
         @media screen and (max-width: 600px) {
-        body {
-            padding-left: 5%;
-            padding-top: 1.5%;
-            padding-bottom: 1.5%;
-            font-size: 12px;
-        }
-        h1 {
-            font-size: 2rem;
-        }
-        a {
-            font-size: 1.5rem;
-        }
-        img {
-            width: 50%;
-            height: auto;
-        }
+            body {
+                padding-left: 5%;
+                padding-top: 5%;
+                padding-bottom: 0;
+                font-size: 12px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            a {
+                font-size: 1.5rem;
+            }
+            img {
+                width: 50%;
+                height: auto;
+            }
+            #fixed-image {
+                position: relative;
+                padding-top: 5%;
+                bottom: 0;
+                left: -5%;
+                right: 0;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
         }
     </style>
 </head>
@@ -101,6 +120,8 @@
     <a href="https://www.youtube.com/channel/UCN-bFIdJM0gQlgX7h6LKcZA" target="_blank">Official YouTube</a>
     <br>
     <a href="https://anime.bang-dream.com/mygo/" target="_blank">Anime Website</a>
-</body>
+    <br>
+    <img id="fixed-image" src="5_w.jpg" alt="MyGO!!!!! ZEPP TOUR 2024「彷徨する渇望」">
 
+</body>
 </html>
